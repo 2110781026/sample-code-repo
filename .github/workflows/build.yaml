@@ -24,7 +24,7 @@ jobs:
 
     - uses: sigstore/cosign-installer@main
       with:
-      cosign-release: 'v1.0.0'
+        cosign-release: 'v1.0.0'
  
     - name: Login to GitHub Container Registry
       if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/release-*' }}
